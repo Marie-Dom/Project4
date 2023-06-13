@@ -8,11 +8,10 @@
 
 .header-logo {
   display: flex;
-
-  background-color: red;
+  justify-content: center;
 
   .header-logo__img {
-    justify-content: center;
-    width: 162px;
+    width: 30%;
+    height: 44px;
   }
 }
