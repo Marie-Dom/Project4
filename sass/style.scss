@@ -38,9 +38,8 @@ body {
 .location {
   border: none;
   background: #eaeaea;
-  &::placeholder {
-    font-size: 1em;
-    font-weight: 500;
-    color: #353535;
-  }
+  width: 38%;
+  font-size: 1em;
+  font-weight: 500;
+  color: #353535;
 }
