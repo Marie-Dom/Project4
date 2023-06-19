@@ -1,3 +1,11 @@
+// mixins pour flex-center
+@mixin flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 // mixins pour le bouton
 @mixin button-gradient {
   background: linear-gradient(
