@@ -70,7 +70,7 @@ body {
   text-align: center;
   margin-top: 0px;
   background-color: #f6f6f6;
-  height: 250px;
+  height: 287.5px;
 
   @media screen and (min-width: $breakpoint-ms) {
     height: 205px;
@@ -115,6 +115,7 @@ body {
   // border-radius: 25px 25px 25px 25px;
   @include border-radius(25px);
   @include button-gradient;
+  @include button-shadow;
 
   @media screen and (min-width: $breakpoint-ms) {
     width: 30%;
@@ -124,3 +125,55 @@ body {
     width: 20%;
   }
 }
+
+.functioning {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 20px;
+  padding-left: 17px;
+  // height: 440px;
+  background-color: $bg-color;
+
+  &__bar {
+    // @include flex-center;
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    padding: 10px 0px 20px 0px;
+    gap: 24.92px;
+
+    &--btn {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: 1em;
+      font-weight: 500;
+      width: 90%;
+      height: 72.38px;
+      padding-left: 30px;
+      gap: 20px;
+      border: none;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      @include border-radius(20px);
+    }
+  }
+}
+
+.icone {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+  left: 8px;
+  text-align: center;
+  background-color: $primarycolor;
+  @include border-radius(50px);
+}
+
+//   @media screen and (min-width: $breakpoint-ms) {
+//   }
+// }
