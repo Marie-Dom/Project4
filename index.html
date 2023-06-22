@@ -25,42 +25,47 @@
         <img src="./images/logo/ohmyfood.png" alt="logo_ohMyFood" />
       </div>
     </header>
-
-    <div class="location">
-      <div class="location__vector">
-        <i class="fa-solid fa-location-dot"></i>
+    <main class="main">
+      <div class="location">
+        <span>
+          <i class="fa-solid fa-location-dot"></i>
+        </span>
+        <span class="location__search">Paris, France</span>
       </div>
-      <p class="location__town">Paris, France</p>
-    </div>
 
-    <section class="intro">
-      <h2 class="intro__title">Réservez le menu qui vous convient</h2>
-      <p class="intro__title--subtitle">
-        Découvrez des restaurants d'exception, sélectionnés par nos soins.
-      </p>
-      <!-- <div> -->
-      <button class="button">Explorez nos restaurants</button>
-      <!-- </div> -->
-    </section>
-    <section class="functioning">
-      <h2>Fonctionnement</h2>
-      <div class="functioning__bar">
-        <button class="functioning__bar--btn">
-          <div class="icone">1</div>
-          <div><i class="fa-solid fa-mobile-screen-button"></i></div>
-          <span>Choisissez un restaurant</span>
-        </button>
-        <button class="functioning__bar--btn">
-          <div class="icone">2</div>
-          <div><i class="fa-solid fa-list"></i></div>
-          <span>Composez votre menu</span>
-        </button>
-        <button class="functioning__bar--btn">
-          <div class="icone">3</div>
-          <div><i class="fa-solid fa-store"></i></div>
-          <span>Dégustez au restaurant</span>
-        </button>
-      </div>
-    </section>
+      <section class="intro">
+        <h2 class="intro__title">Réservez le menu qui vous convient</h2>
+        <p class="intro__title--subtitle">
+          Découvrez des restaurants d'exception, sélectionnés par nos soins.
+        </p>
+        <!-- <div> -->
+        <button class="button">Explorez nos restaurants</button>
+        <!-- </div> -->
+      </section>
+      <section class="functioning">
+        <h2>Fonctionnement</h2>
+        <ul class="functioning__bar">
+          <li>
+            <div class="functioning__bar--num">1</div>
+            <div>
+              <i
+                class="fa-solid fa-mobile-screen-button functioning__bar--icon"
+              ></i>
+            </div>
+            <span>Choisissez un restaurant</span>
+          </li>
+          <li>
+            <div class="functioning__bar--num">2</div>
+            <div><i class="fa-solid fa-list functioning__bar--icon"></i></div>
+            <span>Composez votre menu</span>
+          </li>
+          <li>
+            <div class="functioning__bar--num">3</div>
+            <div><i class="fa-solid fa-store functioning__bar--icon"></i></div>
+            <span>Dégustez au restaurant</span>
+          </li>
+        </ul>
+      </section>
+    </main>
   </body>
 </html>
