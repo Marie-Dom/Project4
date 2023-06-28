@@ -8,6 +8,11 @@ $greenFont: #008766;
 $light-pink: #fcc0ce;
 $grey: #353535;
 $bg-color: #ffff;
+$gradient-color: linear-gradient(
+  193.33deg,
+  $primarycolor -11.44%,
+  $secondarycolor 123.93%
+);
 
 // variables pour les medias queries
 // md for medium screen and ld for large screen

@@ -1,11 +1,33 @@
 /* $radius is the parameter of the function */
-p,
-h2 {
-  font-family: "Roboto", sans-serif;
+.heart__icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
 }
-
-h1 {
-  font-family: "Shrikhand", cursive;
+.heart__icon--empty {
+  position: absolute;
+  color: black;
+}
+.heart__icon--full {
+  position: absolute;
+  opacity: 0;
+  background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 400ms linear;
+}
+.heart__icon:hover .heart__icon--full {
+  opacity: 1;
+}
+.heart__icon:hover .heart__icon--empty {
+  opacity: 0;
+}
+.heart__icon--full:active {
+  opacity: 1;
+  cursor: pointer;
 }
 
 h2 {
@@ -28,6 +50,16 @@ li {
 body {
   margin: 0px;
   min-width: 320px;
+}
+
+p,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
 }
 
 .header-logo {
@@ -125,8 +157,8 @@ body {
   }
 }
 
-.button {
-  width: 58.14%;
+.btn {
+  width: 218px;
   height: 50px;
   color: #fff;
   font-size: 1em;
@@ -135,14 +167,24 @@ body {
   background: linear-gradient(193.33deg, #9356dc -11.44%, #ff79da 123.93%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity, 200ms, linear;
+}
+.btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356dc -5.2%, #ff79da 110.74%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
+  border-radius: 25px;
+  transform: matrix(1, 0, 0, 1.1, 0, 0);
+  opacity: 0.85;
 }
 @media screen and (min-width: 768px) {
-  .button {
+  .btn {
     width: 30%;
   }
 }
 @media screen and (min-width: 1025px) {
-  .button {
+  .btn {
     width: 20%;
   }
 }
@@ -204,6 +246,14 @@ body {
   border-radius: 20px;
 }
 
+.functioning__bar li:hover {
+  background-color: #f5edff;
+}
+
+.functioning__bar li:hover .icon {
+  color: #9356dc;
+}
+
 .functioning__bar--num {
   display: flex;
   flex-direction: column;
@@ -222,7 +272,7 @@ body {
   margin-left: -40px;
 }
 
-.functioning__bar--icon {
+.icon {
   color: grey;
   font-size: 1.2rem;
 }
@@ -272,8 +322,8 @@ body {
   border: 5px solid #99e2d0;
   border-radius: 2px;
   position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 15px;
+  top: 15px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .new p {
@@ -305,7 +355,7 @@ body {
 }
 .card figure figcaption {
   margin: 0px;
-  padding: 10px;
+  padding: 0px 0px 12px 13px;
 }
 
 .heart {
@@ -313,8 +363,19 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.heart h3 {
+.heart__txt {
+  margin: 16px 0px 12px 13px;
+}
+.heart__txt h3 {
   margin: 0px;
+}
+.heart__txt p {
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+.heart__container {
+  margin-top: 23px;
+  margin-right: 25px;
 }
 
 footer {
@@ -349,6 +410,7 @@ footer li {
   display: flex;
   flex-direction: column;
   padding: 0px;
+  gap: 8px;
 }
 @media screen and (min-width: 1025px) {
   footer ul,
@@ -365,10 +427,13 @@ footer a {
   font-size: 1rem;
   font-weight: 500;
 }
-
-li div {
-  display: flex;
-  flex-direction: row;
-  padding: 8px 0px 8px 0px;
-  gap: 16px;
+footer .ustensils {
+  width: 11px;
+  height: 13px;
+  margin-right: 15px;
+}
+footer .handshake {
+  width: 11px;
+  height: 13px;
+  margin-right: 15px;
 }/*# sourceMappingURL=style.css.map */

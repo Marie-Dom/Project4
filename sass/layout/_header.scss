@@ -1,0 +1,20 @@
+.header-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+
+  img {
+    width: 43.2%;
+    height: 44px;
+
+    // medias queries for ms
+    @media screen and (min-width: $breakpoint-ms) {
+      width: 33.2%;
+    }
+
+    @media screen and (min-width: $breakpoint-ls) {
+      width: 19.5%;
+    }
+  }
+}

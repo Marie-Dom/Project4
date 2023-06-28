@@ -1,86 +1,10 @@
-@import "variables";
-@import "mixins";
-
-p,
-h2 {
-  font-family: "Roboto", sans-serif;
-}
-
-h1 {
-  font-family: "Shrikhand", cursive;
-}
-
-h2 {
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #000;
-}
-
-li {
-  list-style-type: none;
-}
-
-body {
-  margin: 0px;
-  min-width: 320px;
-}
-
-.header-logo {
-  display: flex;
-  justify-content: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
-
-  img {
-    width: 43.2%;
-    height: 44px;
-
-    // medias queries for ms
-    @media screen and (min-width: $breakpoint-ms) {
-      width: 33.2%;
-    }
-
-    @media screen and (min-width: $breakpoint-ls) {
-      width: 19.5%;
-    }
-  }
-}
-
-.location {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  background-color: #eaeaea;
-  padding: 0px;
-  gap: 17px;
-  box-shadow: 0px 6px 8px 0px #dbd0d2 inset;
-
-  &__search {
-    border: none;
-    background: #eaeaea;
-    width: 35%;
-    font-size: 1em;
-    font-weight: 500;
-    color: $grey;
-
-    @media screen and (min-width: $breakpoint-ms) {
-      width: 30%;
-    }
-
-    @media screen and (min-width: $breakpoint-ls) {
-      width: 10%;
-    }
-  }
-}
+@import "./utils/variables";
+@import "./utils/mixins";
+@import "./components/heart";
+@import "./base/reset";
+@import "./base/typography";
+@import "./layout/header";
+@import "./layout/location";
 
 .intro {
   @include flex-center;
@@ -124,8 +48,8 @@ body {
     }
   }
 }
-.button {
-  width: 58.14%;
+.btn {
+  width: 218px;
   height: 50px;
   color: #fff;
   font-size: 1em;
@@ -134,6 +58,15 @@ body {
   @include border-radius(25px);
   @include button-gradient;
   @include button-shadow;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity, 200ms, linear;
+
+  &:hover {
+    @include button-hover-gradient;
+    @include button-hover-shadow;
+    opacity: 0.85;
+  }
 
   @media screen and (min-width: $breakpoint-ms) {
     width: 30%;
@@ -180,6 +113,7 @@ body {
     padding-left: 70px;
   }
 }
+
 .functioning__bar li {
   display: flex;
   flex-direction: row;
@@ -198,6 +132,13 @@ body {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   @include border-radius(20px);
 }
+
+.functioning__bar li:hover {
+  background-color: #f5edff;
+}
+.functioning__bar li:hover .icon {
+  color: $primarycolor;
+}
 .functioning__bar--num {
   @include flex-center;
   position: relative;
@@ -213,7 +154,7 @@ body {
   margin-left: -40px;
 }
 
-.functioning__bar--icon {
+.icon {
   color: grey;
   font-size: 1.2rem;
 }
@@ -261,8 +202,8 @@ body {
   border: 5px solid #99e2d0;
   border-radius: 2px;
   position: absolute;
-  right: 5%;
-  top: 5%;
+  right: 15px;
+  top: 15px;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
   p {
@@ -296,7 +237,7 @@ body {
     margin: 0px;
     figcaption {
       margin: 0px;
-      padding: 10px;
+      padding: 0px 0px 12px 13px;
     }
   }
 }
@@ -306,8 +247,21 @@ body {
   align-items: center;
   justify-content: space-between;
 
-  h3 {
-    margin: 0px;
+  &__txt {
+    margin: 16px 0px 12px 13px;
+
+    h3 {
+      margin: 0px;
+    }
+
+    p {
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+  }
+  &__container {
+    margin-top: 23px;
+    margin-right: 25px;
   }
 }
 
@@ -343,6 +297,7 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 0px;
+    gap: 8px;
 
     @media screen and (min-width: $breakpoint-ls) {
       flex-direction: row;
@@ -358,11 +313,16 @@ footer {
     font-size: 1rem;
     font-weight: 500;
   }
-}
 
-li div {
-  display: flex;
-  flex-direction: row;
-  padding: 8px 0px 8px 0px;
-  gap: 16px;
+  .ustensils {
+    width: 11px;
+    height: 13px;
+    margin-right: 15px;
+  }
+
+  .handshake {
+    width: 11px;
+    height: 13px;
+    margin-right: 15px;
+  }
 }
