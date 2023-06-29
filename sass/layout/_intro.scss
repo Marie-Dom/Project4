@@ -1,0 +1,42 @@
+.intro {
+  @include flex-center;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  background-color: #f6f6f6;
+  height: 287.5px;
+
+  @media screen and (min-width: $breakpoint-ms) {
+    height: 205px;
+  }
+
+  @media screen and (min-width: $breakpoint-ls) {
+    height: 250px;
+  }
+
+  &__title {
+    margin-top: 0px;
+    width: 75%;
+    font-weight: 700;
+
+    @media screen and (min-width: $breakpoint-ls) {
+      font-size: 2.5em;
+    }
+    // padding-left: 42px;
+    // padding-right: 58px;
+
+    &--subtitle {
+      margin-top: 0px;
+      width: 85%;
+      font-size: 1.13em;
+      font-weight: 300;
+      color: $grey;
+      // padding-left: 34px;
+      // padding-right: 26px;
+
+      @media screen and (min-width: $breakpoint-ms) {
+        padding: 0px;
+      }
+    }
+  }
+}

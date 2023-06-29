@@ -7,22 +7,14 @@
   background-color: #eaeaea;
   padding: 0px;
   gap: 17px;
-  box-shadow: 0px 6px 8px 0px #dbd0d2 inset;
+  box-shadow: inset 0px 6px 8px 0px #dbd0d2;
 
   &__search {
     border: none;
     background: #eaeaea;
-    width: 35%;
+    // width: 35%;
     font-size: 1em;
     font-weight: 500;
     color: $grey;
-
-    @media screen and (min-width: $breakpoint-ms) {
-      width: 30%;
-    }
-
-    @media screen and (min-width: $breakpoint-ls) {
-      width: 10%;
-    }
   }
 }

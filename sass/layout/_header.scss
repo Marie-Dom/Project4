@@ -1,20 +1,22 @@
-.header-logo {
+.header {
   display: flex;
+  align-items: center;
   justify-content: center;
-  padding-top: 14px;
-  padding-bottom: 14px;
 
-  img {
-    width: 43.2%;
-    height: 44px;
+  .header-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 14px;
+    padding-bottom: 14px;
 
-    // medias queries for ms
-    @media screen and (min-width: $breakpoint-ms) {
-      width: 33.2%;
+    img {
+      width: 95%;
+      height: 36px;
     }
+  }
 
-    @media screen and (min-width: $breakpoint-ls) {
-      width: 19.5%;
-    }
+  .arrow {
+    position: absolute;
+    left: 20px;
   }
 }
