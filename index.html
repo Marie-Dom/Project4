@@ -20,11 +20,26 @@
     <link rel="stylesheet" href="../assets/css/style.css" />
   </head>
   <body>
+    <div class="loader">
+      <div class="loader__wrapper">
+        <div class="loader__circle-wrapper loader__circle-wrapper--1">
+          <div class="loader__circle loader__circle--1"></div>
+        </div>
+        <div class="loader__circle-wrapper loader__circle-wrapper--2">
+          <div class="loader__circle loader__circle--2"></div>
+        </div>
+        <div class="loader__circle-wrapper loader__circle-wrapper--3">
+          <div class="loader__circle loader__circle--3"></div>
+        </div>
+      </div>
+    </div>
+
     <header class="header">
       <div class="header-logo">
         <img src="../assets/images/logo/ohmyfood.png" alt="logo_ohMyFood" />
       </div>
     </header>
+
     <main class="main">
       <div class="location">
         <span>
@@ -39,7 +54,9 @@
           Découvrez des restaurants d'exception, sélectionnés par nos soins.
         </p>
         <!-- <div> -->
-        <button class="btn">Explorez nos restaurants</button>
+        <a href="#restaurants"
+          ><button class="btn">Explorez nos restaurants</button></a
+        >
         <!-- </div> -->
       </section>
       <section class="functioning">
@@ -64,7 +81,7 @@
           </li>
         </ul>
       </section>
-      <section class="restaurants">
+      <section id="restaurants" class="restaurants">
         <h2 class="restaurants__title">Restaurants</h2>
         <div class="cards">
           <article class="card">
@@ -175,7 +192,6 @@
                       <i class="fa-solid fa-heart fa-2x heart__icon--full"></i>
                     </div>
                   </div>
-                  <!-- <p>Folie-Méricourt</p> -->
                 </figcaption>
               </figure>
             </a>
@@ -203,7 +219,7 @@
           <a href="#"> Mentions légales </a>
         </li>
         <li>
-          <a href="mail to:ohmyfood-contact@gmail.com">Contact</a>
+          <a href="mailto:contact@ohmyfood.com">Contact</a>
         </li>
       </ul>
     </footer>

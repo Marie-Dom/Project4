@@ -1,16 +1,13 @@
 .main__menu {
   @include main-menu;
 }
+.full__menu {
+  width: 95%;
+  @media screen and (min-width: $breakpoint-ms) {
+    width: 65%;
+  }
+}
 
-.appetizers {
-  animation: fadein 3s ease-in-out;
-}
-.dish {
-  animation: fadein 6s ease-in-out;
-}
-.dessert {
-  animation: fadein 9s ease-in-out;
-}
 .cross {
   @include cross;
 }
@@ -25,4 +22,17 @@
   align-items: center;
   justify-content: center;
   margin: 30px 0;
+  width: 50%;
+
+  @media screen and (min-width: $breakpoint-ms) {
+    width: 30%;
+  }
+
+  @media screen and (min-width: $breakpoint-ls) {
+    width: 30%;
+  }
+
+  @media screen and (min-width: $breakpoint-xls) {
+    width: 25%;
+  }
 }
