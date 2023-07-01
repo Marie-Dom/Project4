@@ -45,17 +45,17 @@
     &--1 {
       width: 35px;
       height: 35px;
-      background-color: #9256dc;
+      background-color: $primarycolor;
     }
     &--2 {
       width: 30px;
       height: 30px;
-      background-color: #ff7ad9;
+      background-color: $secondarycolor;
     }
     &--3 {
       width: 20px;
       height: 20px;
-      background-color: #99e2d0;
+      background-color: $tertiarycolor;
     }
   }
 }
