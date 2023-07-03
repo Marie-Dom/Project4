@@ -15,10 +15,11 @@
 }
 
 @mixin button-gradient {
+  background: rgb(147, 86, 220);
   background: linear-gradient(
-    193.33deg,
-    $primarycolor -11.44%,
-    $secondarycolor 123.93%
+    335deg,
+    rgba(147, 86, 220, 1) 0%,
+    rgba(255, 121, 218, 1) 100%
   );
 }
 
@@ -61,15 +62,15 @@
   @media screen and (min-width: $breakpoint-ms) {
     @include flex-center;
     width: 75%;
-    margin-left: 120px;
+    margin-left: 105px;
   }
 
   @media screen and (min-width: $breakpoint-ls) {
-    margin-left: 155px;
+    margin-left: 135px;
   }
 
   @media screen and (min-width: $breakpoint-xls) {
-    margin-left: 180px;
+    margin-left: 165px;
   }
 }
 @mixin menu-title {
@@ -130,6 +131,7 @@
   transition: transform 330ms ease-in-out;
   & .fa-check-circle {
     color: #fff;
+    font-size: 20px;
     transition: transform 500ms ease-in-out;
   }
 }

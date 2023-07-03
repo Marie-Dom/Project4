@@ -55,14 +55,15 @@
   @include border-radius(20px);
 }
 
-.functioning__bar li:hover {
-  background-color: #f5edff;
-}
+// .functioning__bar li:hover {
+//   background-color: #f5edff;
+// }
 .functioning__bar li:hover .icon {
   color: $primarycolor;
 }
 .functioning__bar--num {
   @include flex-center;
+  justify-content: center;
   position: relative;
   background-color: $primarycolor;
   color: #fff;

@@ -4,15 +4,16 @@
   text-align: center;
   margin-top: 0px;
   background-color: #f6f6f6;
-  height: 287.5px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 
-  @media screen and (min-width: $breakpoint-ms) {
-    height: 205px;
-  }
+  // @media screen and (min-width: $breakpoint-ms) {
+  //   height: 205px;
+  // }
 
-  @media screen and (min-width: $breakpoint-ls) {
-    height: 250px;
-  }
+  // @media screen and (min-width: $breakpoint-ls) {
+  //   height: 250px;
+  // }
 
   &__title {
     margin-top: 0px;
