@@ -74,4 +74,4 @@ https://github.com/Marie-Dom/Project4.git
 
 ###### Lien vers la page Github-Pages :
 
-https://github.com/Marie-Dom/Project4/deployments/activity_log?environment=github-pages
+https://marie-dom.github.io/Project4/
