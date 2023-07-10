@@ -1,24 +1,32 @@
 .functioning {
   width: 100%;
   margin-top: 20px;
-  padding-left: 17px;
+  // padding-left: 17px;
   // height: 440px;
   background-color: $bg-color;
 }
 
-.functioning h2 {
-  margin-left: 20px;
-
-  @media screen and (min-width: $breakpoint-ls) {
-    margin-left: 70px;
-  }
+.container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
 }
+
+// .functioning h2 {
+//   // margin-left: 20px;
+
+//   @media screen and (min-width: $breakpoint-ls) {
+//     margin-left: 70px;
+//   }
+// }
 .functioning__bar {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   // flex-wrap: wrap;
-  padding-left: 10px;
+  padding-inline-start: 0px;
   list-style-type: none;
 
   @media screen and (min-width: $breakpoint-ms) {
@@ -27,13 +35,13 @@
     flex-wrap: nowrap;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    gap: 40px;
   }
 
-  @media screen and (min-width: $breakpoint-ls) {
-    width: 93%;
-    padding-left: 70px;
-  }
+  // @media screen and (min-width: $breakpoint-ls) {
+  //   width: 85%;
+  //   // padding-left: 70px;
+  // }
 }
 
 .functioning__bar li {
@@ -45,14 +53,22 @@
   font-family: "Roboto", sans-serif;
   font-size: 1em;
   font-weight: 500;
-  width: 90%;
+  width: 95%;
   height: 72.38px;
   padding: 25px;
   gap: 15px;
-  margin: 20px 20px 20px 0px;
+  margin: 20px 0px 20px 0px;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   @include border-radius(20px);
+
+  @media screen and (min-width: $breakpoint-ls) {
+    width: 30%;
+  }
+
+  @media screen and (min-width: $breakpoint-xxls) {
+    width: 31%;
+  }
 }
 
 // .functioning__bar li:hover {

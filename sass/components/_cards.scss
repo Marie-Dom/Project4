@@ -3,12 +3,20 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding-bottom: 66px;
+  gap: 18px;
 
   @media screen and (min-width: $breakpoint-ms) {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 100px;
   }
+
+  // @media screen and (min-width: $breakpoint-ms) {
+  //   gap: 80px;
+  //   padding-bottom: 50px;
+  // }
 
   @media screen and (min-width: $breakpoint-ls) {
     gap: 100px;
@@ -35,11 +43,23 @@
   position: relative;
   @include border-radius(25px);
   background-color: #fff;
-  margin: 20px;
+  // margin: 20px 0px 20px 0px;
   box-shadow: 4px 4px 6px #aaa;
 
   @media screen and (min-width: $breakpoint-ms) {
-    width: 40%;
+    width: 43%;
+  }
+
+  @media screen and (min-width: $breakpoint-ls) {
+    width: 44%;
+  }
+
+  @media screen and (min-width: $breakpoint-xls) {
+    width: 45%;
+  }
+
+  @media screen and (min-width: $breakpoint-xxls) {
+    width: 46%;
   }
 
   &__img {

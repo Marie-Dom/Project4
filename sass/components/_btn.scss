@@ -1,8 +1,8 @@
 .btn {
-  width: 50%;
+  width: 65%;
   height: 50px;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1rem;
   border: none;
   // border-radius: 25px 25px 25px 25px;
   @include border-radius(25px);
@@ -30,6 +30,10 @@
 
   @media screen and (min-width: $breakpoint-xls) {
     width: 20%;
+  }
+
+  @media screen and (min-width: $breakpoint-xxls) {
+    width: 18%;
   }
 }
 

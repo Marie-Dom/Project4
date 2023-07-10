@@ -1,5 +1,17 @@
 .main__menu {
   @include main-menu;
+
+  @media screen and (min-width: $breakpoint-ms) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: $breakpoint-ls) {
+    width: 75%;
+  }
+
+  @media screen and (min-width: $breakpoint-xls) {
+    width: 70%;
+  }
 }
 .full__menu {
   width: 95%;
